@@ -37,7 +37,6 @@ jobs:
       
       - name: Install Dependencies
         run: npm ci --userconfig=.npmrc.gha
-        env:
       
       - name: Build
         env:
