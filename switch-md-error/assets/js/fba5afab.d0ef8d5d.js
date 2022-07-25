@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_gh_pages=self.webpackChunkdocs_gh_pages||[]).push([[5500],{2013:s=>{s.exports=JSON.parse('{"label":"hola","permalink":"/switch-md-error/blog/tags/hola","allTagsPath":"/switch-md-error/blog/tags","count":1}')}}]);
