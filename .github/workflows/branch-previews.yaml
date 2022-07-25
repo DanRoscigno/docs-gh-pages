@@ -38,10 +38,6 @@ jobs:
       - name: Install Dependencies
         run: npm ci --userconfig=.npmrc.gha
         env:
-          # NOTE: All of the following are internal things that likely aren't necessary
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-          CI_SKIP_TARTUFO: 'true'
-          HUSKY: 0
       
       - name: Build
         env:
@@ -67,6 +63,7 @@ jobs:
         run: |
           export PREVIEW_BRANCH_DIR=$(echo $GITHUB_HEAD_REF | sed -e 's#^refs/heads/##; s#[^0-9a-zA-Z-]#-#g')
           echo "PREVIEW_BRANCH_DIR=$PREVIEW_BRANCH_DIR" >> $GITHUB_ENV
+          echo "PREVIEW_BRANCH_DIR=$PREVIEW_BRANCH_DIR"
 
       - name: Create deployment
         id: create-deployment
