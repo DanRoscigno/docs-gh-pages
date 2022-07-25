@@ -41,7 +41,7 @@ jobs:
       - name: Build
         env:
           # NOTE: You should update the following for your repo. Likely the repo url could be pulled from env vars
-          DOSSIER_BASE_URL: /${{ env.PREVIEW_BRANCH_DIR }}/
+          DOSSIER_BASE_URL: /docs-gh-pages/${{ env.PREVIEW_BRANCH_DIR }}/
           DOSSIER_EDIT_BASE_URL: https://github.com/$ORG/$REPO/edit/${{ env.GITHUB_HEAD_REF }}/website
         run: |
           npm run build
