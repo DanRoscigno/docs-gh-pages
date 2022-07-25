@@ -12,7 +12,7 @@ const config = {
   title: 'Re-Re-Re-Re-Testing PR previews',
   tagline: 'Previews would be extremely cool',
   url: URL,
-  baseUrl: /docs-gh-pages/BASE_URL,
+  baseUrl: BASE_URL,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
