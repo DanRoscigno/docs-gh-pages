@@ -49,14 +49,13 @@ jobs:
           DOSSIER_BASE_URL: /${{ env.PREVIEW_BRANCH_DIR }}/
           DOSSIER_EDIT_BASE_URL: https://github.com/$ORG/$REPO/edit/${{ env.GITHUB_HEAD_REF }}/website
         run: |
-          cd ./website
           npm run build
       
       - name: Store Build Artifact
         uses: actions/upload-artifact@3cea5372237819ed00197afe530f5a7ea3e805c8
         with:
           name: branch-preview
-          path: website/build
+          path: build
           if-no-files-found: error
 
   deploy:
