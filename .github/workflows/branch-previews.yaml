@@ -142,7 +142,7 @@ jobs:
               deployment_id: ${{ steps.create-deployment.outputs.result }},
               state: 'success',
               log_url: `https://github.com/$ORG/$REPO/actions/runs/${context.runId}`,
-              environment_url: `https://danroscigno.github.io/${process.env.PREVIEW_BRANCH_DIR}/`,
+              environment_url: `https://danroscigno.github.io/docs-gh-pages/${process.env.PREVIEW_BRANCH_DIR}/`,
               mediaType: {
                 previews: ['flash', 'ant-man']
               }
