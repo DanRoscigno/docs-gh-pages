@@ -1,5 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+const URL = process.env.DOSSIER_URL || 'https://path.to.prod.url';
+const BASE_URL = process.env.DOSSIER_BASE_URL || '/';
+const EDIT_BASE_URL = process.env.DOSSIER_EDIT_BASE_URL || 'https://github.com/$ORG/$REPO/edit/main/';
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
@@ -8,8 +11,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: URL,
+  baseUrl: BASE_URL,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -36,8 +39,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: EDIT_BASE_URL,
         },
         blog: {
           showReadingTime: true,
