@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_gh_pages=self.webpackChunkdocs_gh_pages||[]).push([[2214],{6049:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/docs-gh-pages/edit-markdown/blog/tags/hola","allTagsPath":"/docs-gh-pages/edit-markdown/blog/tags","count":1}')}}]);
