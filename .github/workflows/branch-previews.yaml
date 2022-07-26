@@ -37,7 +37,7 @@ jobs:
           echo "PREVIEW_BRANCH_DIR=$PREVIEW_BRANCH_DIR" >> $GITHUB_ENV
       
       - name: Install Dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
       
       - name: Build
         env:
