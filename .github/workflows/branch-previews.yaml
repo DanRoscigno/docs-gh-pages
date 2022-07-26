@@ -38,8 +38,8 @@ jobs:
       - name: Build
         env:
           # NOTE: You should update the following for your repo. Likely the repo url could be pulled from env vars
-          DOSSIER_BASE_URL: /docs-gh-pages/${{ env.PREVIEW_BRANCH_DIR }}/
-          DOSSIER_EDIT_BASE_URL: https://github.com/$ORG/$REPO/edit/${{ env.GITHUB_HEAD_REF }}/website
+          DOSSIER_BASE_URL: /${{ github.event.repository.name }}/${{ env.PREVIEW_BRANCH_DIR }}/
+          DOSSIER_EDIT_BASE_URL: https://github.com/$GITHUB_REPOSITORY_OWNER/${{ github.event.repository.name }}/edit/${{ env.GITHUB_HEAD_REF }}/docs
         run: |
           yarn build
       
