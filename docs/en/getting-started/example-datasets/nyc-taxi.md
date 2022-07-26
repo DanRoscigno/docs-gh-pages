@@ -182,7 +182,7 @@ dropoff_puma            Nullable(String)
 ) ENGINE = Log;
 ```
 
-It is needed for converting fields to more correct data types and, if possible, to eliminate NULLs.
+It is necessary to convert fields to more correct data types and, if possible, to eliminate NULLs.
 
 ``` bash
 $ time clickhouse-client --query="INSERT INTO trips FORMAT TabSeparated" < trips.tsv
