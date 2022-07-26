@@ -12,7 +12,7 @@ const config = {
   url: URL,
   baseUrl: BASE_URL,
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'DanRoscigno', // Usually your GitHub org/user name.
   projectName: 'docs-gh-pages', // Usually your repo name.
