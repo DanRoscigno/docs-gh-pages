@@ -9,8 +9,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Re-Re-Re-Re-Testing PR previews',
-  tagline: 'Previews would be extremely cool',
+  title: 'PR previews in GitHub Pages',
+  tagline: 'Each PR gets a preview',
   url: URL,
   baseUrl: BASE_URL,
   onBrokenLinks: 'throw',
