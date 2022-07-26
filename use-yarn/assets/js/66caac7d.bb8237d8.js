@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs_gh_pages=self.webpackChunkdocs_gh_pages||[]).push([[5829],{4888:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/docs-gh-pages/use-yarn/blog/tags/docusaurus","allTagsPath":"/docs-gh-pages/use-yarn/blog/tags","count":4}')}}]);
