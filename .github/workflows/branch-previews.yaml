@@ -37,7 +37,7 @@ jobs:
           echo "PREVIEW_BRANCH_DIR=$PREVIEW_BRANCH_DIR" >> $GITHUB_ENV
       
       - name: Install Dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
       
       - name: Build
         env:
@@ -45,6 +45,7 @@ jobs:
           DOSSIER_BASE_URL: /${{ github.event.repository.name }}/${{ env.PREVIEW_BRANCH_DIR }}/
           DOSSIER_EDIT_BASE_URL: https://github.com/$GITHUB_REPOSITORY_OWNER/${{ github.event.repository.name }}/edit/${{ env.GITHUB_HEAD_REF }}/docs
         run: |
+          export NODE_OPTIONS="--max_old_space_size=4096"
           yarn build
       
       - name: Store Build Artifact
