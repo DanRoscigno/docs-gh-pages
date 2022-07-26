@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_gh_pages=self.webpackChunkdocs_gh_pages||[]).push([[5374],{9337:s=>{s.exports=JSON.parse('{"label":"facebook","permalink":"/docs-gh-pages/use-yarn/blog/tags/facebook","allTagsPath":"/docs-gh-pages/use-yarn/blog/tags","count":1}')}}]);

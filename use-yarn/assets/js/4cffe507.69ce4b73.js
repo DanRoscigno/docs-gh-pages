@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_gh_pages=self.webpackChunkdocs_gh_pages||[]).push([[8715],{8691:e=>{e.exports=JSON.parse('{"permalink":"/docs-gh-pages/use-yarn/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
