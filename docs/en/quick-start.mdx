@@ -104,12 +104,15 @@ ClickHouse provides a web based SQL console that this part of the Quick Start wi
 You can connect to the SQL console from the Services list in your ClickHouse Cloud organization.
 
 From your organization page, open the connection details for the service that you want to connect to:
+
   ![Services list](./images/quickstart/Services.png)
 
 From here you can reset the password for the `default` user, get the connection information to connect clients (SQL clients, visualization tools, development language clients, etc.), and **connect to SQL console**.
+
   ![Service connection details](./images/quickstart/ServiceDetails.png)
 
 The SQL console requires a username and password, the username is populated with `default`; change it to your username if you are not using the default user.  Enter your password in the password field.
+
   ![The SQL console](./images/quickstart/SQLConsole.png)
 
 </TabItem>
@@ -214,6 +217,7 @@ Let's verify it worked:
   SELECT * FROM helloworld.my_first_table
   ```
    You should see the four rows of data that were inserted:
+
    ![New rows inserted](./images/quickstart_03.png)
 
 
@@ -223,6 +227,7 @@ Let's verify it worked:
 <TabItem value="serverless" label="ClickHouse Cloud" default>
 
 You can also connect to your ClickHouse Cloud service using a command-line tool named **clickhouse-client**. The connection details are in the **Native** tab in the services connection details:
+
   ![clickhouse client connection details](./images/quickstart/CloudClickhouseClientDetails.png)
 
   Download info to be determined (we need a download link for
@@ -367,6 +372,7 @@ The following command inserts the data into `my_first_table`:
 </Tabs>
 
 Notice the new rows appear in the table now:
+
   ![New rows from CSV file](./images/quickstart_04.png)
 
 ## What's Next?
