@@ -1,3 +1,14 @@
+/* keep the navbar from disappearing when scrolling */
+.navbar--fixed-top {
+  position: fixed;
+  width: -webkit-fill-available;
+} 
+
+/* give some sace for the breadcrumbs */
+.padding-top--md, .padding-vert--md {
+    padding-top: 4.5rem!important;
+}
+
 /* Docsearch from Algolia */
 [data-theme='light'] .DocSearch mark {
   --docsearch-highlight-color: black;
@@ -7,12 +18,16 @@
   --docsearch-highlight-color: white;
 }
 
+[data-theme='dark'] .DocSearch-Hit-source {
+  color: white;
+}
+
 /* right hand table of contents */
 .table-of-contents__link {
-	color: var(--ifm-toc-link-color);
+  color: var(--ifm-toc-link-color);
 }
 .table-of-contents__link--active {
-	color: var(--ifm-toc-link-color--active);
+  color: var(--ifm-toc-link-color--active);
 }
 
 /* Remove the filter, which was changing the

@@ -79,7 +79,7 @@ const config = {
 //      autoCollapseSidebarCategories: true,
       navbar: {
 	title: 'ClickHouse',
-        hideOnScroll: true,
+        hideOnScroll: false,
         logo: {
           alt: 'ClickHouse',
           src: 'img/logo_without_text.svg',
